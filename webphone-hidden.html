@@ -149,52 +149,46 @@
         </script>
         <!-- URL que foi pega pela API no /webphone - cria o iframe e injeta o webphone-->
         <script src="URL_WEBPHONE_API_TOTALVOICE"></script>
+        <b>Total Phone</b><br>
+        <br>
+        <input type="button" onclick="javascript:conectar();" value="Conectar">
+        <input type="button" onclick="javascript:desconectar();" value="Desconectar"> 
+        <br>
+        <br>
+        <input type="button" onclick="javascript:desligaChamada();" value="Desligar">
+        <input type="button" onclick="javascript:desligaChamada();" value="Atender">
+        <input type="button" onclick="javascript:chamaNumero(4001);" value="Chamar (48) 3181-0323">
+        Liga para o seu número<br>
+        <br>
         
-        <br>
-        <input type="button" onclick="javascript:conectar();" value="Conectar"> (o sistema conecta sozinho por default ao abrir)<br>
-        <input type="button" onclick="javascript:desconectar();" value="Desconectar"> (nao recebe nem faz mais chamadas)<br>
-
-        <input type="button" onclick="javascript:desligaChamada();" value="Desliga">
-        <input type="button" onclick="javascript:chamaNumero(4001);" value="Chama 4001">
-        <br>
-        <input type="button" onclick="javascript:chamaNumero(4832830151);" value="Chama 4832830151">
-        <br>
-        <input type="button" onclick="javascript:chamaNumero(97988888888);" value="Chama 97988888888">
-        <br> (DTMF: 0,1,2,3,4,5,6,7,8,9,*,#)<br>
         <input type="button" onclick="javascript:enviaDTMF('1');" value="DTMF 1">
-        <br>
+        
         <input type="button" onclick="javascript:enviaDTMF('2');" value="DTMF 2">
-        <br>
-        <input type="button" onclick="javascript:enviaDTMF('0');" value="DTMF 0">
-        <br>
-        <input type="button" onclick="javascript:enviaDTMF('*');" value="DTMF *">
-        <br>
-        <input type="button" onclick="javascript:enviaDTMF('#');" value="DTMF #">
-        <br><input type="button" onclick="javascript:mute();" value="Mute/Unmute">
-        <br>
-        <br>
-        <input type="button" onclick="transferirConsulta('4000');" value="Transferir Consulta para 4998">
-        <br>
-        <input type="button" onclick="transferir('4515');" value="Transferir para 4515">
-        <input type="button" onclick="javascript:atender();" value="Atender">
-
-        <br>
-        <br>
-
-        <input type="button" onclick="javascript:recstart();" value="REC Start">
-        <input type="button" onclick="javascript:recstop();" value="REC Stop">
-
-        <br>
-        <br>
         
-        <input type="button" onclick="javascript:pausarNaFila();" value="Pausar em todas filas">
-        <input type="button" onclick="javascript:despausarNaFila();" value="Despausar em todas filas">
-
+        <input type="button" onclick="javascript:enviaDTMF('0');" value="DTMF 3">
+        <br>
+        <input type="button" onclick="javascript:enviaDTMF('*');" value="DTMF 4">
+        <input type="button" onclick="javascript:enviaDTMF('*');" value="DTMF 5">
+        <input type="button" onclick="javascript:enviaDTMF('*');" value="DTMF 6">
+        <br>
+        <input type="button" onclick="javascript:enviaDTMF('*');" value="DTMF 7">
+        <input type="button" onclick="javascript:enviaDTMF('*');" value="DTMF 8">
+        <input type="button" onclick="javascript:enviaDTMF('*');" value="DTMF 9">
+        <br>
+        <input type="button" onclick="javascript:enviaDTMF('#');" value="DTMF *">
+        <input type="button" onclick="javascript:enviaDTMF('*');" value="DTMF 1">
+        <input type="button" onclick="javascript:enviaDTMF('*');" value="DTMF #">
+        <br> 
+        <br>
+        <input type="button" onclick="javascript:TransfereConsulta();" value="Transfere - Conssulta">
+        <input type="button" onclick="javascript:TransfereDireto();" value="Transferir - Direto">
         <br>
         <br>
-        
-        <input type="button" onclick="javascript:entrarNaFila(47);" value="Entrar na fila 47">
-        <input type="button" onclick="javascript:sairDaFila(47);" value="Sair da fila 47">
+        <input type="button" onclick="javascript:IniciarGravação();" value="Iniciar Gravação">
+        <input type="button" onclick="javascript:PararGravação();" value="Parar Gravação">
+        <br>
+        <br>
+        <input type="button" onclick="MuteUnmute('4515');" value="Mute/Unmute">
     </body>
     
 </html>
